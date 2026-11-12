@@ -1,0 +1,28 @@
+1
+00:00:01,200 --> 00:00:04,800
+Bem-vindo a este pequeno workshop.
+
+2
+00:00:05,500 --> 00:00:09,600
+Abra a pasta do projeto e escolha um
+arquivo de legenda.
+
+3
+00:00:10,200 --> 00:00:14,800
+Verifique o tempo de início e fim de cada
+legenda.
+
+4
+00:00:15,400 --> 00:00:20,000
+Leia as linhas traduzidas enquanto assiste
+ao vídeo.
+
+5
+00:00:20,600 --> 00:00:25,400
+Se uma frase for muito longa, encurte a
+redação.
+
+6
+00:00:26,000 --> 00:00:30,400
+Salve suas legendas e revise-as mais uma
+vez.
