@@ -4,10 +4,13 @@ Compare the cue counts and timestamps of an original and an existing translated 
 
 ```sh
 python check_srt_timing.py workshop.en.srt workshop.pt-BR.srt
+python check_srt_timing.py workshop.en.srt workshop.pt-BR.shifted-1ms.srt
 python check_srt_timing.py original.srt translated.srt
 ```
 
 The included six-cue English source was written for Scanfile. The Portuguese file is an actual output from an eligible Scanfile trial. Their timestamps match; this example is not an independent quality evaluation. The samples are available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with attribution to Scanfile and an indication of changes. The script is offered under [MIT](LICENSE.txt).
+
+The `shifted-1ms` file is an intentionally modified copy, not the actual output: cue 3 ends one millisecond later. The second example reports `timing_mismatch`, position `3`, and exits with code `1`. The same fixture is also available as [JSONL on Hugging Face](https://huggingface.co/datasets/zsoat/subtitle-timing-fixture-en-pt-br); its source and target text are included, so avoid using real private captions as public fixtures.
 
 The command prints JSON and returns exit code **0** for matching counts and times, **1** for a difference, and **2** for invalid input. It compares cues by position, not by numeric identifier. If counts differ it reports the difference without matching individual cues. Basic UTF-8 SRT only, at most 5 MiB per file; VTT, ASS and nonstandard timing extensions are not supported. It does not check overlapping or out-of-order cues. Error output can include a local file path.
 

@@ -14,6 +14,8 @@ class TimingTests(unittest.TestCase):
         source = checker.read_srt(ROOT / 'workshop.en.srt')
         translated = checker.read_srt(ROOT / 'workshop.pt-BR.srt')
         self.assertEqual(checker.compare(source, translated)['status'], 'match')
+        shifted = checker.read_srt(ROOT / 'workshop.pt-BR.shifted-1ms.srt')
+        self.assertEqual(checker.compare(source, shifted)['changed_positions'], [3])
         changed = list(translated)
         changed[0] = (changed[0][0] + 1, changed[0][1])
         self.assertEqual(checker.compare(source, changed)['changed_positions'], [1])
