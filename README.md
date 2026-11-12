@@ -1,5 +1,7 @@
 # SRT translation timing check
 
+[Español](README.es.md)
+
 Compare the cue counts and timestamps of an original and an existing translated SRT file. The script runs locally with Python 3.9+ and the standard library; it does not send, edit, or translate the files.
 
 ```sh
@@ -31,3 +33,4 @@ Compare os tempos de um SRT original e outro já traduzido. O script é gratuito
 ```sh
 python -m unittest test_check_srt_timing.py
 ```
+
