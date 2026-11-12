@@ -13,6 +13,8 @@ The command prints JSON and returns exit code **0** for matching counts and time
 
 A matching timeline does **not** prove translation accuracy, synchronization to video, reading speed or accessibility. Review the text with a fluent reader and watch the captions with the intended video.
 
+This project is maintained by Scanfile, which separately offers a commercial subtitle translation service that uploads the document and uses the displayed trial and credit rules. The script works independently without a Scanfile account. This description was prepared with AI assistance.
+
 ## Automation
 
 Run the command in an existing CI job after generating the two files; its exit code lets the job detect a mismatch. Keep private subtitle files out of public build logs and artifacts. The tool itself has no network requests, but your CI provider may store files according to its own settings.
