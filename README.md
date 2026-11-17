@@ -22,6 +22,8 @@ This project is maintained by Scanfile, which separately offers a commercial sub
 
 ## Browser comparison
 
+For an offline browser version with no Python installation, download this repository as a ZIP using **Code → Download ZIP**, extract it, and open `browser/index.html` in a current browser. Select an original and a translated UTF-8 SRT or WebVTT file, or run the fictional example. The browser version supports mixed formats and compares up to 5,000 cue positions; it runs entirely on your device. It does not compare subtitle text, cue styling or WebVTT settings. A matching result does not establish correct translation or video synchronization. Its optional Scanfile link opens a separate online service and includes a fixed aggregate campaign tag; it does not include your filenames or subtitle contents.
+
 For an interactive alternative, [compare two subtitle files in Scanfile](https://scanfile.online/tools/compare-subtitle-timing). It accepts UTF-8 SRT and WebVTT, including a mixed pair, and compares cue counts and timestamps in the browser without uploading the selected files for that check. When all counts and times match, you can review paired text and basic formatting tags. The browser tool does not automatically align or repair cues, assess translation quality, or prove synchronization with a video. Site assets and analytics may use the network. Scanfile's separate translation service uploads the selected file and follows the displayed trial and credit rules.
 
 ## Automation
@@ -37,4 +39,5 @@ Compare os tempos de um SRT original e outro já traduzido. O script é gratuito
 ```sh
 python -m unittest test_check_srt_timing.py
 ```
+
 
