@@ -20,6 +20,10 @@ A matching timeline does **not** prove translation accuracy, synchronization to 
 
 This project is maintained by Scanfile, which separately offers a commercial subtitle translation service that uploads the document and uses the displayed trial and credit rules. The script works independently without a Scanfile account. This description was prepared with AI assistance.
 
+## Browser comparison
+
+For an interactive alternative, [compare two subtitle files in Scanfile](https://scanfile.online/tools/compare-subtitle-timing). It accepts UTF-8 SRT and WebVTT, including a mixed pair, and compares cue counts and timestamps in the browser without uploading the selected files for that check. When all counts and times match, you can review paired text and basic formatting tags. The browser tool does not automatically align or repair cues, assess translation quality, or prove synchronization with a video. Site assets and analytics may use the network. Scanfile's separate translation service uploads the selected file and follows the displayed trial and credit rules.
+
 ## Automation
 
 Run the command in an existing CI job after generating the two files; its exit code lets the job detect a mismatch. Keep private subtitle files out of public build logs and artifacts. The tool itself has no network requests, but your CI provider may store files according to its own settings.
