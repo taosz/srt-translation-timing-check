@@ -34,12 +34,13 @@ Run the command in an existing CI job after generating the two files; its exit c
 
 ## Sobre este projeto
 
-Compare os tempos de um SRT original e outro já traduzido. O script é gratuito, funciona sem rede e não traduz as legendas. Um resultado igual não comprova qualidade, acessibilidade ou sincronização com o vídeo. O Scanfile também oferece um [tradutor comercial de legendas](https://scanfile.online/pt-br/tools/ai-subtitle-translator#legendas-youtube), separado deste script: a tradução exige envio do arquivo e segue as regras de teste e créditos mostradas no site. A descrição deste projeto foi preparada com auxílio de IA.
+Compare os tempos de um SRT original e outro já traduzido. O script é gratuito, funciona sem rede e não traduz as legendas. Há também uma [comparação em português no navegador](https://taosz.github.io/srt-translation-timing-check/browser/pt-br/) para SRT ou WebVTT, inclusive formatos mistos. Ela lê os arquivos no navegador; a hospedagem usa rede. Um resultado igual não comprova qualidade, acessibilidade ou sincronização com o vídeo. O Scanfile também oferece um [tradutor comercial de legendas](https://scanfile.online/pt-br/tools/ai-subtitle-translator#legendas-youtube), separado deste script: a tradução exige envio do arquivo e segue as regras de teste e créditos mostradas no site. A descrição deste projeto foi preparada com auxílio de IA.
 
 ## Tests
 
 ```sh
 python -m unittest test_check_srt_timing.py
 ```
+
 
 
